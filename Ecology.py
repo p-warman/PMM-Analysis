@@ -120,7 +120,7 @@ def StageBiasedProjection(TransitionMatrix, time):
 	plt.title("Stage Biased Projection")
 	plt.xlabel("Time")
 	plt.ylabel("Population Size / Growth Rate")
-	# plt.legend()
+	plt.legend()
 	plt.show()
 	return None 
 
@@ -248,7 +248,6 @@ print("Growth Rate/Dominant Eigenvalue: ", val, "\nStable Population Structure/D
 vecNew = []
 for i in range(len(vec)):
 	vecNew.append(vec[i,0])
-print(vecNew)
 plt.bar(np.linspace(1,TransitionMatrix.shape[0], TransitionMatrix.shape[0]), vecNew)
 plt.title("Stable Poulation Structure Distribution")
 plt.ylabel("Population Size")
